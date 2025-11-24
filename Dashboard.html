@@ -1,0 +1,257 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twisty Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css"/>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div style="display: flex; align-items: center; gap: 48px;">
+                <div class="logo">
+                    <div class="logo-icon">T</div>
+                    TWISTY
+                </div>
+                <nav class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Messages</a>
+                    <a href="#">Discover</a>
+                    <a href="#">Wallet</a>
+                    <a href="#">Projects</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Enter your search request...">
+                </div>
+                <div class="icon-btn">⚙️</div>
+                <div class="icon-btn">🔔</div>
+                <div class="profile-pic"></div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div class="main-content">
+            <!-- Income Tracker -->
+            <div>
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">
+                                <div class="card-icon"></div>
+                                Income Tracker
+                            </div>
+                        </div>
+                        <select class="dropdown">
+                            <option>Week</option>
+                            <option>Month</option>
+                            <option>Year</option>
+                        </select>
+                    </div>
+                    <div class="card-subtitle">
+                        Track changes in income over time and access detailed data on each project and payments received
+                    </div>
+
+                    <div class="chart-container">
+                        <div class="chart" id="chart">
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 35%;" data-value="1850"></div>
+                                <div class="bar-label" data-day="S">S</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 50%;" data-value="2100"></div>
+                                <div class="bar-label" data-day="M">M</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar bar-active" style="height: 80%;" data-value="2567">
+                                    <div class="tooltip tooltip-visible">$2,567</div>
+                                </div>
+                                <div class="bar-label bar-label-active" data-day="T">T</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 65%;" data-value="2300"></div>
+                                <div class="bar-label" data-day="W">W</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 45%;" data-value="1950"></div>
+                                <div class="bar-label" data-day="T">T</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 70%;" data-value="2400"></div>
+                                <div class="bar-label" data-day="F">F</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 55%;" data-value="2200"></div>
+                                <div class="bar-label" data-day="S">S</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="percentage">+20%</div>
+                    <div class="percentage-text">This week's income is higher than last week's</div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div>
+                <div class="sidebar-header">
+                    <h2 class="sidebar-title">Your Recent Projects</h2>
+                    <a href="#" class="see-all">See all Project</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <div class="project-icon" style="background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);">
+                                
+                            </div>
+                            <div class="project-details">
+                                <h3>Web Development Project</h3>
+                                <div class="project-rate">$10/hour</div>
+                            </div>
+                        </div>
+                        <span class="badge">Paid</span>
+                        <div class="expand-btn">▲</div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Remote</span>
+                        <span class="tag">Part-time</span>
+                    </div>
+                    <div class="project-description">
+                        This project involves implementing both frontend and backend functionalities, as well as integrating with third-party APIs.
+                    </div>
+                    <div class="project-meta">
+                        <span> Germany</span>
+                        <span>2h ago</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <div class="project-icon" style="background: #64748b;">
+                                ©
+                            </div>
+                            <div class="project-details">
+                                <h3>Copyright Project</h3>
+                                <div class="project-rate">$10/hour</div>
+                            </div>
+                        </div>
+                        <span class="badge" style="background: #e2e8f0; color: #64748b;">Not Paid</span>
+                        <div class="expand-btn">▼</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <div class="project-icon" style="background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);">
+                                
+                            </div>
+                            <div class="project-details">
+                                <h3>Web Design Project</h3>
+                                <div class="project-rate">$10/hour</div>
+                            </div>
+                        </div>
+                        <span class="badge">Paid</span>
+                        <div class="expand-btn">▼</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section">
+            
+            <div class="connect-card">
+                <div class="card-header">
+                    <h3 style="font-size: 18px; font-weight: 600;">Let's Connect</h3>
+                    <a href="#" class="see-all">See all</a>
+                </div>
+                <div class="contact">
+                    <div class="avatar" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);"></div>
+                    <div class="contact-info">
+                        <h4>Randy Gouse</h4>
+                        <div class="contact-role">Cybersecurity specialist</div>
+                    </div>
+                    <span class="status-badge status-senior">Senior</span>
+                    <div class="add-btn">+</div>
+                </div>
+                <div class="contact">
+                    <div class="avatar" style="background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);"></div>
+                    <div class="contact-info">
+                        <h4>Giana Schleifer</h4>
+                        <div class="contact-role">UX/UI Designer</div>
+                    </div>
+                    <span class="status-badge status-middle">Middle</span>
+                    <div class="add-btn">+</div>
+                </div>
+            </div>
+
+            <!--  Features -->
+            <div class="premium-card">
+                <h3>Unlock Premium Features</h3>
+                <p>Get access to exclusive benefits and expand your freelancing opportunities</p>
+                <button class="upgrade-btn">Upgrade now →</button>
+            </div>
+
+            <!-- Proposal Progress -->
+            <div class="progress-card">
+                <div class="progress-header">
+                    <h3 style="font-size: 18px; font-weight: 600;">Proposal Progress</h3>
+                    <div class="date"> April 11, 2024 ▼</div>
+                </div>
+                <div class="progress-stats">
+                    <div class="stat">
+                        <div class="stat-label">Proposals sent</div>
+                        <div class="stat-value">64</div>
+                        <div class="stat-bars">
+                            <div class="stat-bar stat-bar-sent" style="height: 30%;"></div>
+                            <div class="stat-bar stat-bar-sent" style="height: 45%;"></div>
+                            <div class="stat-bar stat-bar-sent" style="height: 60%;"></div>
+                            <div class="stat-bar stat-bar-sent" style="height: 35%;"></div>
+                            <div class="stat-bar stat-bar-sent" style="height: 70%;"></div>
+                            <div class="stat-bar stat-bar-sent" style="height: 50%;"></div>
+                            <div class="stat-bar stat-bar-sent" style="height: 80%;"></div>
+                            <div class="stat-bar stat-bar-sent" style="height: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Interviews</div>
+                        <div class="stat-value">12</div>
+                        <div class="stat-bars">
+                            <div class="stat-bar stat-bar-interviews" style="height: 45%;"></div>
+                            <div class="stat-bar stat-bar-interviews" style="height: 60%;"></div>
+                            <div class="stat-bar stat-bar-interviews" style="height: 35%;"></div>
+                            <div class="stat-bar stat-bar-interviews" style="height: 75%;"></div>
+                            <div class="stat-bar stat-bar-interviews" style="height: 50%;"></div>
+                            <div class="stat-bar stat-bar-interviews" style="height: 65%;"></div>
+                            <div class="stat-bar stat-bar-interviews" style="height: 40%;"></div>
+                            <div class="stat-bar stat-bar-interviews" style="height: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Hires</div>
+                        <div class="stat-value">10</div>
+                        <div class="stat-bars">
+                            <div class="stat-bar stat-bar-hires" style="height: 50%;"></div>
+                            <div class="stat-bar stat-bar-hires" style="height: 65%;"></div>
+                            <div class="stat-bar stat-bar-hires" style="height: 40%;"></div>
+                            <div class="stat-bar stat-bar-hires" style="height: 70%;"></div>
+                            <div class="stat-bar stat-bar-hires" style="height: 45%;"></div>
+                            <div class="stat-bar stat-bar-hires" style="height: 80%;"></div>
+                            <div class="stat-bar stat-bar-hires" style="height: 55%;"></div>
+                            <div class="stat-bar stat-bar-hires" style="height: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+    </html>
