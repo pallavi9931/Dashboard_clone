@@ -468,7 +468,7 @@ margin-bottom:42px;
     margin-top:5px;
     text-align:center;
     display: inline-block;
-    background-color: #1f2937;   /* dark navy/gray like screenshot */
+    background-color: #1f2937;  
     border-radius: 12px;
     font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -490,7 +490,7 @@ border-radius:50%;
 font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 font-size: 10px;
 font-weight: 400;
-color: #1f2937;      /* dark gray like the screenshot */
+color: #1f2937;      
 letter-spacing: 0.5px;
 margin-left:-10px;
 
@@ -528,7 +528,7 @@ font-weight:500;
     font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: #6b7280;      /* light gray similar to screenshot */
+    color: #6b7280;      
     line-height: 1.6;
     letter-spacing: 0.2px;
 
@@ -1119,5 +1119,6 @@ font-family:sans-serif;
     .proposal-text{
         margin-left:4px;
     }
+
 
 }
